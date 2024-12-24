@@ -8,6 +8,7 @@ namespace MediatR_Mediator_Pattern.Mediator.Commands
         public int Quantity { get; set; }
         public decimal Value { get; set; }
 
+
         public class CreateProductCommandHandler : IRequestHandler<CreateProductComm, Guid>
         {
             public Task<Guid> Handle(CreateProductComm request, CancellationToken cancellationToken)
